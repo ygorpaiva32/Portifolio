@@ -24,3 +24,14 @@ addEventListener('scroll', ()=> {
   }
 })
 
+function menuShow(){
+  let mobile = document.querySelector(".mobile-menu")
+  if(mobile.classList.contains('open')){
+    mobile.classList.remove('open')
+    document.querySelector('.icon').src = "./svg/menu_white_36dp.svg"
+  }else{
+    mobile.classList.add('open')
+    document.querySelector('.icon').src = "./svg/close_white_36dp.svg"
+  }
+}
+
